@@ -1,0 +1,2278 @@
+{
+	"info": {
+		"_postman_id": "908b36cd-c2c9-41d6-bb59-e9172fd81a09",
+		"name": "SICServicios",
+		"description": "**Pasaje de SICServiciosRest a SICServicios**\n\nTambien se estan corrigiendo los routes (@RequestMapping): se le saca la ruta \"rest\" y se dejan dos grupos Consultar y Validar, ejemplo el @RequestMapping(value = \"/rest/consultar\") pasa a ser @RequestMapping(value = \"/consultar\").\n\n**Ejemplo de url (test)**\n\n[https://app.test.arba.gov.ar/SICServicios/consultar/organismos](https://app.test.arba.gov.ar/SICServicios/consultar/organismos)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1074842",
+		"_collection_link": "https://galactic-meadow-687453.postman.co/workspace/SIC-Workspace~11ec5778-b1b6-4fa3-86c9-930cacc625d6/collection/1074842-908b36cd-c2c9-41d6-bb59-e9172fd81a09?action=share&source=collection_link&creator=1074842"
+	},
+	"item": [
+		{
+			"name": "local",
+			"item": [
+				{
+					"name": "Consultar",
+					"item": [
+						{
+							"name": "cedulasPartidaArchivo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/consultar/cedulasPartidaArchivo?partido=55&partida=278297&secuencia=15651515&origen=UNISYS",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"cedulasPartidaArchivo"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "55"
+										},
+										{
+											"key": "partida",
+											"value": "278297"
+										},
+										{
+											"key": "secuencia",
+											"value": "15651515"
+										},
+										{
+											"key": "origen",
+											"value": "UNISYS"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "incumbenciaProfesional",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/consultar/incumbenciaProfesional?cuit=27244210843",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"incumbenciaProfesional"
+									],
+									"query": [
+										{
+											"key": "cuit",
+											"value": "27244210843"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "planosPartida",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/consultar/planosPartida?partido=22&partida=4809",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"planosPartida"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "22"
+										},
+										{
+											"key": "partida",
+											"value": "4809"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "organismos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/consultar/organismos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"organismos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "datosProfesional",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/consultar/datosProfesional?cuit=27244210843",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"datosProfesional"
+									],
+									"query": [
+										{
+											"key": "cuit",
+											"value": "27244210843"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "partidos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/consultar/partidos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"partidos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "circunscripciones",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/consultar/circunscripciones?partido=55",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"circunscripciones"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "55"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "secciones",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/consultar/secciones?partido=55&circunscripcion=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"secciones"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "55"
+										},
+										{
+											"key": "circunscripcion",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nomenclaturasPlano",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/consultar/nomenclaturasPlano?partido=86&numero=1&anio=2022",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"nomenclaturasPlano"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "86"
+										},
+										{
+											"key": "numero",
+											"value": "1"
+										},
+										{
+											"key": "anio",
+											"value": "2022"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "valuacionAnio",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/consultar/valuacionAnio?partido=55&partida=41015&anio=2024&fechaCertif=20230207",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"valuacionAnio"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "55"
+										},
+										{
+											"key": "partida",
+											"value": "41015"
+										},
+										{
+											"key": "anio",
+											"value": "2024"
+										},
+										{
+											"key": "fechaCertif",
+											"value": "20230207"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "cedulasPartida",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/consultar/cedulasPartida?partido=55&partida=278297",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"cedulasPartida"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "55"
+										},
+										{
+											"key": "partida",
+											"value": "278297"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "visualizadorArchivo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/consultar/visualizadorArchivo?origen=PH&identificador=3261",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"visualizadorArchivo"
+									],
+									"query": [
+										{
+											"key": "origen",
+											"value": "PH"
+										},
+										{
+											"key": "identificador",
+											"value": "3261"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "getVisualizadorArchivo",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://app.test.arba.gov.ar/SICServiciosRest/services/catastro/getVisualizadorArchivo?origen=PH&identificador=3333",
+											"protocol": "http",
+											"host": [
+												"app",
+												"test",
+												"arba",
+												"gov",
+												"ar"
+											],
+											"path": [
+												"SICServiciosRest",
+												"services",
+												"catastro",
+												"getVisualizadorArchivo"
+											],
+											"query": [
+												{
+													"key": "origen",
+													"value": "PH"
+												},
+												{
+													"key": "identificador",
+													"value": "3333"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "planosMensura",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"partido\": 137,\r\n    \"circunscripcion\": 9,\r\n    \"seccion\": \"G\",\r\n    \"chacraN\": 0,\r\n    \"chacraL\": \"\",\r\n    \"quintaN\": 9,\r\n    \"quintaL\": \"\",\r\n    \"fraccionN\": 0,\r\n    \"fraccionL\": \"\",\r\n    \"manzanaN\": 9,\r\n    \"manzanaL\": \"M\",\r\n    \"parcelaN\": 0,\r\n    \"parcelaL\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/consultar/planosMensura",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"planosMensura"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "datosPartida",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/consultar/datosPartida?partido=118&partida=41193",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"datosPartida"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "118"
+										},
+										{
+											"key": "partida",
+											"value": "41193"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "planosMensuraPorPlano",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"nroPlano\":4,\r\n\"anio\": 2022,\r\n\"partido\": 33\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/consultar/planosMensuraPorPlano",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"planosMensuraPorPlano"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "planosPH",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"partido\": 117,\r\n    \"partida\": 103176\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/consultar/planosPH ",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"planosPH "
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "planosPHPorPlano",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"partido\": 117,\r\n    \"nroPlano\": 203,\r\n    \"anio\":1983\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/consultar/planosPHPorPlano",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"planosPHPorPlano"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Validar",
+					"item": [
+						{
+							"name": "nomenclatura",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/validar/nomenclatura?nomenclatura=13709  0000   0000   0000   0000   0836B        ",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"validar",
+										"nomenclatura"
+									],
+									"query": [
+										{
+											"key": "nomenclatura",
+											"value": "13709  0000   0000   0000   0000   0836B        "
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pdoPdaNomenclatura",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"partido\": 55,\r\n\"partida\": 41015,\r\n\"circunscripcion\": \"\",\r\n\"seccion\": \"\",\r\n\"chacraN\": 0,\r\n\"chacraL\": \"\",\r\n\"quintaN\": 0,\r\n\"quintaL\": \"\",\r\n\"fraccionN\": 0,\r\n\"fraccionL\": \"\",\r\n\"manzanaN\": 0,\r\n\"manzanaL\": \"\",\r\n\"parcelaN\": 0,\r\n\"parcelaL\": \"\",\r\n\"subParcela\": \"\"\r\n}\t",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/validar/pdoPdaNomenclatura",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"validar",
+										"pdoPdaNomenclatura"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "validarNomenclatura",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\"partido\": 55,\r\n\"partida\": \"\",\r\n \"circunscripcion\": 1,\r\n        \"seccion\": \"R\",\r\n        \"chacraN\": 0,\r\n        \"chacraL\": \"\",\r\n        \"quintaN\": 0,\r\n        \"quintaL\": \"\",\r\n        \"fraccionN\": 0,\r\n        \"fraccionL\": \"\",\r\n        \"manzanaN\": 1406,\r\n        \"manzanaL\": \"\",\r\n        \"parcelaN\": 37,\r\n        \"parcelaL\": \"\",\r\n        \"subParcela\": \"\"\r\n}\t",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/validarPdoPdaNomenclatura",
+											"protocol": "https",
+											"host": [
+												"app",
+												"test",
+												"arba",
+												"gov",
+												"ar"
+											],
+											"path": [
+												"SICServicios",
+												"rest",
+												"consultar",
+												"validarPdoPdaNomenclatura"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Vistas",
+					"item": [
+						{
+							"name": "holaMundo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/SICServicios/rest/vistas/holaMundo",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"SICServicios",
+										"rest",
+										"vistas",
+										"holaMundo"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "test",
+			"item": [
+				{
+					"name": "Consultar",
+					"item": [
+						{
+							"name": "incumbenciaProfesional",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/incumbenciaProfesional?cuit=27244210843",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"incumbenciaProfesional"
+									],
+									"query": [
+										{
+											"key": "cuit",
+											"value": "27244210843"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "planosPartida",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/planosPartida?partido=22&partida=4809",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"planosPartida"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "22"
+										},
+										{
+											"key": "partida",
+											"value": "4809"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "organismos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/organismos",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"organismos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "datosProfesional",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/datosProfesional?cuit=27244210843",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"datosProfesional"
+									],
+									"query": [
+										{
+											"key": "cuit",
+											"value": "27244210843"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "partidos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/partidos",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"partidos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "circunscripciones",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/circunscripciones?partido=55",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"circunscripciones"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "55"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "secciones",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/secciones?partido=55&circunscripcion=1",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"secciones"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "55"
+										},
+										{
+											"key": "circunscripcion",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nomenclaturasPlano",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/nomenclaturasPlano?partido=86&numero=1&anio=2022",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"nomenclaturasPlano"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "86"
+										},
+										{
+											"key": "numero",
+											"value": "1"
+										},
+										{
+											"key": "anio",
+											"value": "2022"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "valuacionAnio",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/valuacionAnio?partido=55&partida=41015&anio=2024&fechaCertif=20230207",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"valuacionAnio"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "55"
+										},
+										{
+											"key": "partida",
+											"value": "41015"
+										},
+										{
+											"key": "anio",
+											"value": "2024"
+										},
+										{
+											"key": "fechaCertif",
+											"value": "20230207"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "cedulasPartida",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/cedulasPartida?partido=55&partida=278297",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"cedulasPartida"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "55"
+										},
+										{
+											"key": "partida",
+											"value": "278297"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "cedulasPartidaArchivo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/cedulasPartidaArchivo?partido=6&partida=2313&secuencia=1&origen=OCR",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"cedulasPartidaArchivo"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "6"
+										},
+										{
+											"key": "partida",
+											"value": "2313"
+										},
+										{
+											"key": "secuencia",
+											"value": "1"
+										},
+										{
+											"key": "origen",
+											"value": "OCR"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "cedulasPartidaArchivo",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/cedulasPartidaArchivo?partido=55&partida=278297&secuencia=15651515&origen=UNISYS",
+											"protocol": "https",
+											"host": [
+												"app",
+												"test",
+												"arba",
+												"gov",
+												"ar"
+											],
+											"path": [
+												"SICServicios",
+												"rest",
+												"consultar",
+												"cedulasPartidaArchivo"
+											],
+											"query": [
+												{
+													"key": "partido",
+													"value": "55"
+												},
+												{
+													"key": "partida",
+													"value": "278297"
+												},
+												{
+													"key": "secuencia",
+													"value": "15651515"
+												},
+												{
+													"key": "origen",
+													"value": "UNISYS"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "visualizadorArchivo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/visualizadorArchivo?origen=PH&identificador=3261",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"visualizadorArchivo"
+									],
+									"query": [
+										{
+											"key": "origen",
+											"value": "PH"
+										},
+										{
+											"key": "identificador",
+											"value": "3261"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "getVisualizadorArchivo",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://app.test.arba.gov.ar/SICServiciosRest/services/catastro/getVisualizadorArchivo?origen=PH&identificador=3333",
+											"protocol": "http",
+											"host": [
+												"app",
+												"test",
+												"arba",
+												"gov",
+												"ar"
+											],
+											"path": [
+												"SICServiciosRest",
+												"services",
+												"catastro",
+												"getVisualizadorArchivo"
+											],
+											"query": [
+												{
+													"key": "origen",
+													"value": "PH"
+												},
+												{
+													"key": "identificador",
+													"value": "3333"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "planosMensura",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"partido\": 137,\r\n    \"circunscripcion\": 9,\r\n    \"seccion\": \"G\",\r\n    \"chacraN\": 0,\r\n    \"chacraL\": \"\",\r\n    \"quintaN\": 9,\r\n    \"quintaL\": \"\",\r\n    \"fraccionN\": 0,\r\n    \"fraccionL\": \"\",\r\n    \"manzanaN\": 9,\r\n    \"manzanaL\": \"M\",\r\n    \"parcelaN\": 0,\r\n    \"parcelaL\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/planosMensura",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"planosMensura"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "datosPartida",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/datosPartida?partido=118&partida=41193",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"datosPartida"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "118"
+										},
+										{
+											"key": "partida",
+											"value": "41193"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "planosMensuraPorPlano",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"nroPlano\":4,\r\n\"anio\": 2022,\r\n\"partido\": 33\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/planosMensuraPorPlano",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"planosMensuraPorPlano"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "planosPH",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"partido\": 117,\r\n    \"partida\": 103176\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/planosPH ",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"planosPH "
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "planosPHPorPlano",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"partido\": 117,\r\n    \"nroPlano\": 203,\r\n    \"anio\":1983\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/planosPHPorPlano",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"planosPHPorPlano"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Validar",
+					"item": [
+						{
+							"name": "nomenclatura",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/validar/nomenclatura?nomenclatura=13709  0000   0000   0000   0000   0836B        ",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"validar",
+										"nomenclatura"
+									],
+									"query": [
+										{
+											"key": "nomenclatura",
+											"value": "13709  0000   0000   0000   0000   0836B        "
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pdoPdaNomenclatura",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"partido\": 55,\r\n\"partida\": 41015,\r\n\"circunscripcion\": \"\",\r\n\"seccion\": \"\",\r\n\"chacraN\": 0,\r\n\"chacraL\": \"\",\r\n\"quintaN\": 0,\r\n\"quintaL\": \"\",\r\n\"fraccionN\": 0,\r\n\"fraccionL\": \"\",\r\n\"manzanaN\": 0,\r\n\"manzanaL\": \"\",\r\n\"parcelaN\": 0,\r\n\"parcelaL\": \"\",\r\n\"subParcela\": \"\"\r\n}\t",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/validar/pdoPdaNomenclatura",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"validar",
+										"pdoPdaNomenclatura"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "validarNomenclatura",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\"partido\": 55,\r\n\"partida\": \"\",\r\n \"circunscripcion\": 1,\r\n        \"seccion\": \"R\",\r\n        \"chacraN\": 0,\r\n        \"chacraL\": \"\",\r\n        \"quintaN\": 0,\r\n        \"quintaL\": \"\",\r\n        \"fraccionN\": 0,\r\n        \"fraccionL\": \"\",\r\n        \"manzanaN\": 1406,\r\n        \"manzanaL\": \"\",\r\n        \"parcelaN\": 37,\r\n        \"parcelaL\": \"\",\r\n        \"subParcela\": \"\"\r\n}\t",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/validarPdoPdaNomenclatura",
+											"protocol": "https",
+											"host": [
+												"app",
+												"test",
+												"arba",
+												"gov",
+												"ar"
+											],
+											"path": [
+												"SICServicios",
+												"rest",
+												"consultar",
+												"validarPdoPdaNomenclatura"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "prod",
+			"item": [
+				{
+					"name": "Consultar",
+					"item": [
+						{
+							"name": "incumbenciaProfesional",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/consultar/incumbenciaProfesional?cuit=27244210843",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"incumbenciaProfesional"
+									],
+									"query": [
+										{
+											"key": "cuit",
+											"value": "27244210843"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "planosPartida",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/consultar/planosPartida?partido=22&partida=4809",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"planosPartida"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "22"
+										},
+										{
+											"key": "partida",
+											"value": "4809"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "organismos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/consultar/organismos",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"organismos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "datosProfesional",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/consultar/datosProfesional?cuit=27244210843",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"datosProfesional"
+									],
+									"query": [
+										{
+											"key": "cuit",
+											"value": "27244210843"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "partidos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/consultar/partidos",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"partidos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "circunscripciones",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/consultar/circunscripciones?partido=55",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"circunscripciones"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "55"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "secciones",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/consultar/secciones?partido=55&circunscripcion=1",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"secciones"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "55"
+										},
+										{
+											"key": "circunscripcion",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nomenclaturasPlano",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/consultar/nomenclaturasPlano?partido=86&numero=1&anio=2022",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"nomenclaturasPlano"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "86"
+										},
+										{
+											"key": "numero",
+											"value": "1"
+										},
+										{
+											"key": "anio",
+											"value": "2022"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "valuacionAnio",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/consultar/valuacionAnio?partido=55&partida=41015&anio=2024&fechaCertif=20230207",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"valuacionAnio"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "55"
+										},
+										{
+											"key": "partida",
+											"value": "41015"
+										},
+										{
+											"key": "anio",
+											"value": "2024"
+										},
+										{
+											"key": "fechaCertif",
+											"value": "20230207"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "cedulasPartida",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/consultar/cedulasPartida?partido=55&partida=278297",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"cedulasPartida"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "55"
+										},
+										{
+											"key": "partida",
+											"value": "278297"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "cedulasPartidaArchivo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/cedulasPartidaArchivo?partido=6&partida=2313&secuencia=1&origen=OCR",
+									"protocol": "https",
+									"host": [
+										"app",
+										"test",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"cedulasPartidaArchivo"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "6"
+										},
+										{
+											"key": "partida",
+											"value": "2313"
+										},
+										{
+											"key": "secuencia",
+											"value": "1"
+										},
+										{
+											"key": "origen",
+											"value": "OCR"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "cedulasPartidaArchivo",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/cedulasPartidaArchivo?partido=55&partida=278297&secuencia=15651515&origen=UNISYS",
+											"protocol": "https",
+											"host": [
+												"app",
+												"test",
+												"arba",
+												"gov",
+												"ar"
+											],
+											"path": [
+												"SICServicios",
+												"rest",
+												"consultar",
+												"cedulasPartidaArchivo"
+											],
+											"query": [
+												{
+													"key": "partido",
+													"value": "55"
+												},
+												{
+													"key": "partida",
+													"value": "278297"
+												},
+												{
+													"key": "secuencia",
+													"value": "15651515"
+												},
+												{
+													"key": "origen",
+													"value": "UNISYS"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "visualizadorArchivo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/consultar/visualizadorArchivo?origen=PH&identificador=3261",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"visualizadorArchivo"
+									],
+									"query": [
+										{
+											"key": "origen",
+											"value": "PH"
+										},
+										{
+											"key": "identificador",
+											"value": "3261"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "getVisualizadorArchivo",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://app.test.arba.gov.ar/SICServiciosRest/services/catastro/getVisualizadorArchivo?origen=PH&identificador=3333",
+											"protocol": "http",
+											"host": [
+												"app",
+												"test",
+												"arba",
+												"gov",
+												"ar"
+											],
+											"path": [
+												"SICServiciosRest",
+												"services",
+												"catastro",
+												"getVisualizadorArchivo"
+											],
+											"query": [
+												{
+													"key": "origen",
+													"value": "PH"
+												},
+												{
+													"key": "identificador",
+													"value": "3333"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "planosMensura",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"partido\": 137,\r\n    \"circunscripcion\": 9,\r\n    \"seccion\": \"G\",\r\n    \"chacraN\": 0,\r\n    \"chacraL\": \"\",\r\n    \"quintaN\": 9,\r\n    \"quintaL\": \"\",\r\n    \"fraccionN\": 0,\r\n    \"fraccionL\": \"\",\r\n    \"manzanaN\": 9,\r\n    \"manzanaL\": \"M\",\r\n    \"parcelaN\": 0,\r\n    \"parcelaL\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/consultar/planosMensura",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"planosMensura"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "datosPartida",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/consultar/datosPartida?partido=118&partida=41193",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"datosPartida"
+									],
+									"query": [
+										{
+											"key": "partido",
+											"value": "118"
+										},
+										{
+											"key": "partida",
+											"value": "41193"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "planosMensuraPorPlano",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"nroPlano\":4,\r\n\"anio\": 2022,\r\n\"partido\": 33\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/consultar/planosMensuraPorPlano",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"planosMensuraPorPlano"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "planosPH",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"partido\": 117,\r\n    \"partida\": 103176\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/consultar/planosPH ",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"planosPH "
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "planosPHPorPlano",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"partido\": 117,\r\n    \"nroPlano\": 203,\r\n    \"anio\":1983\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/consultar/planosPHPorPlano",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"consultar",
+										"planosPHPorPlano"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Validar",
+					"item": [
+						{
+							"name": "nomenclatura",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/validar/nomenclatura?nomenclatura=13709  0000   0000   0000   0000   0836B        ",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"validar",
+										"nomenclatura"
+									],
+									"query": [
+										{
+											"key": "nomenclatura",
+											"value": "13709  0000   0000   0000   0000   0836B        "
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pdoPdaNomenclatura",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"partido\": 55,\r\n\"partida\": 41015,\r\n\"circunscripcion\": \"\",\r\n\"seccion\": \"\",\r\n\"chacraN\": 0,\r\n\"chacraL\": \"\",\r\n\"quintaN\": 0,\r\n\"quintaL\": \"\",\r\n\"fraccionN\": 0,\r\n\"fraccionL\": \"\",\r\n\"manzanaN\": 0,\r\n\"manzanaL\": \"\",\r\n\"parcelaN\": 0,\r\n\"parcelaL\": \"\",\r\n\"subParcela\": \"\"\r\n}\t",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://app.arba.gov.ar/SICServicios/rest/validar/pdoPdaNomenclatura",
+									"protocol": "https",
+									"host": [
+										"app",
+										"arba",
+										"gov",
+										"ar"
+									],
+									"path": [
+										"SICServicios",
+										"rest",
+										"validar",
+										"pdoPdaNomenclatura"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "validarNomenclatura",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\"partido\": 55,\r\n\"partida\": \"\",\r\n \"circunscripcion\": 1,\r\n        \"seccion\": \"R\",\r\n        \"chacraN\": 0,\r\n        \"chacraL\": \"\",\r\n        \"quintaN\": 0,\r\n        \"quintaL\": \"\",\r\n        \"fraccionN\": 0,\r\n        \"fraccionL\": \"\",\r\n        \"manzanaN\": 1406,\r\n        \"manzanaL\": \"\",\r\n        \"parcelaN\": 37,\r\n        \"parcelaL\": \"\",\r\n        \"subParcela\": \"\"\r\n}\t",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://app.test.arba.gov.ar/SICServicios/rest/consultar/validarPdoPdaNomenclatura",
+											"protocol": "https",
+											"host": [
+												"app",
+												"test",
+												"arba",
+												"gov",
+												"ar"
+											],
+											"path": [
+												"SICServicios",
+												"rest",
+												"consultar",
+												"validarPdoPdaNomenclatura"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
