@@ -10,7 +10,7 @@
 			"name": "local",
 			"item": [
 				{
-					"name": "Consultarissssssss",
+					"name": "Consultar",
 					"item": [
 						{
 							"name": "cedulasPartidaArchivo",
@@ -37,7 +37,7 @@
 									"query": [
 										{
 											"key": "partido",
-											"value": "555"
+											"value": "55"
 										},
 										{
 											"key": "partida",
